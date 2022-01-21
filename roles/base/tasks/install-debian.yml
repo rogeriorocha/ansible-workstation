@@ -13,7 +13,7 @@
       - entr
 #      - fd-find
       - fish
-      - fzf
+#      - fzf
       - git
       - htop
       - inputplug
@@ -66,10 +66,10 @@
 #    - { "name": "exa", "bin": "exa" }
 #  tags: [install]
 
-- name: Fzf
-  git:
-    dest: ~/.fzf
-    repo: "git@github.com:junegunn/fzf.git"
-    accept_hostkey: yes
-    update: no
-  tags: [dotfiles, fzf, install]
+#- name: Fzf
+#  git:
+#    dest: ~/.fzf
+#    repo: "git@github.com:junegunn/fzf.git"
+#    accept_hostkey: yes
+#    update: no
+#  tags: [dotfiles, fzf, install]
