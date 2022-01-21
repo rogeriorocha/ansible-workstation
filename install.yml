@@ -4,12 +4,14 @@
 
   roles:
     - role: base
-    - role: keyboard
+    #- role: keyboard
     - role: asdf
-      vars:
-        lang: nodejs
-    - role: asdf
-      vars:
-        lang: terraform
+
+    # - role: asdf
+    #   vars:
+    #     lang: nodejs
+    # - role: asdf
+    #   vars:
+    #     lang: terraform
     - role: python
     - role: docker
