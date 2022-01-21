@@ -53,10 +53,10 @@
   shell: "chsh -s /usr/bin/zsh {{ lookup('env', 'USER') }}"
   tags: [zsh]
 
-- name: Install emacs
-  become: yes
-  command: snap install --classic --edge emacs
-  tags: [emacs, install]
+#- name: Install emacs
+#  become: yes
+#  command: snap install --classic --edge emacs
+#  tags: [emacs, install]
 
 #- name: Install rust packages
 #  command: cargo install --force {{ item.name }}
