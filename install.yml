@@ -11,9 +11,5 @@
     - role: asdf
       vars:
         lang: terraform
-    - role: elixir
-    - role: kotlin
     - role: python
     - role: docker
-    - role: dotfiles
-    - role: settings
