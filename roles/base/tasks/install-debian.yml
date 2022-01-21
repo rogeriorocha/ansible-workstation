@@ -11,7 +11,7 @@
       - curl
       - editorconfig
       - entr
-      - fd-find
+#      - fd-find
       - fish
       - fzf
       - git
@@ -25,12 +25,12 @@
       - make
       - neofetch
       - postgresql-client
-      - rustc
-      - tldr
+#      - rustc
+#      - tldr
       - tmux
       - unzip
       - vim
-      - xclip
+ #     - xclip
       - zlib1g-dev
       - zsh
     update_cache: yes
@@ -41,12 +41,12 @@
     src: templates/inputplug.desktop.j2
     dest: ~/.config/autostart/inputplug.desktop
 
-- name: Symlink fd
-  become: true
-  file:
-    state: link
-    src: "/usr/bin/fdfind"
-    dest: "/usr/bin/fd"
+#- name: Symlink fd
+#  become: true
+#  file:
+#    state: link
+#    src: "/usr/bin/fdfind"
+#    dest: "/usr/bin/fd"
 
 - name: Set loginshell
   become: true
@@ -58,13 +58,13 @@
   command: snap install --classic --edge emacs
   tags: [emacs, install]
 
-- name: Install rust packages
-  command: cargo install --force {{ item.name }}
-  args:
-    creates: ~/.cargo/bin/{{ item.bin }}
-  with_items:
-    - { "name": "exa", "bin": "exa" }
-  tags: [install]
+#- name: Install rust packages
+#  command: cargo install --force {{ item.name }}
+#  args:
+#    creates: ~/.cargo/bin/{{ item.bin }}
+#  with_items:
+#    - { "name": "exa", "bin": "exa" }
+#  tags: [install]
 
 - name: Fzf
   git:
