@@ -6,6 +6,7 @@
     - role: base
     #- role: keyboard
     - role: asdf
+    - role: jq
 
     # - role: asdf
     #   vars:
