@@ -6,6 +6,19 @@
     accept_hostkey: yes
     update: no
   when: ansible_os_family == "Debian"
+  
+- name: add asdf to zsh
+  lineinfile:
+    path: ~/.zshrc
+    line: . $HOME/.asdf/asdf.sh
+  when: ansible_os_family == "Debian"
+  
+- name: add asdf-completions to zsh
+  lineinfile:
+    path: ~/.zshrc
+    line: . $HOME/.asdf/completions/asdf.bash
+  when: ansible_os_family == "Debian"
+
 
 - name: Install asdf
   homebrew:
