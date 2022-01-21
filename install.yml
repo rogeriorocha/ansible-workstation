@@ -14,5 +14,5 @@
     # - role: asdf
     #   vars:
     #     lang: terraform
-    - role: python
-    - role: docker
+    #- role: python
+    #- role: docker
