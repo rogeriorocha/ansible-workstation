@@ -1,0 +1,25 @@
+packages:
+# 
+  - bat
+  - jq
+# 
+  - kind
+  - k3d
+# cloud 
+  - kustomize
+  - helm
+# iac   
+  - terraform  
+# aws 
+  - awscli
+  - eksctl
+# k8s
+  - kubectl
+  - kubectx
+# log  
+  - k9s
+# dev 
+  - skaffold
+  - make
+#  
+  - elasticsearch   

@@ -1,0 +1,29 @@
+---
+- name: "Install asdf plugins"
+  shell: |
+    asdf plugin-add {{ item }} || exit 0
+#    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+  loop: "{{packages}}"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"
+  args:
+    creates: "~/.oh-my-zsh/{{ item }}"    
+  
+
+- name: "Install plugins latest"
+  shell: |
+    asdf install {{ item }} latest || exit 0
+#    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+  loop: "{{packages}}"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"    
+  
+
+- name: "Install Set global latest plugins"
+  shell: |
+    asdf global {{ item }} latest || exit 0
+#    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+  loop: "{{packages}}"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"    
+  

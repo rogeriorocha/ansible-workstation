@@ -6,9 +6,10 @@
     - role: base
     #- role: keyboard
     - role: asdf
-    - role: jq
     - role: golang
     - role: ruby    
+    - role: ohmyzsh
+    - role: other
 
     # - role: asdf
     #   vars:

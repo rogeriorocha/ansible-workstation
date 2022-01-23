@@ -6,8 +6,8 @@
     name:
       - autoconf
       - build-essential
-      - clang
-      - cmake
+#      - clang
+#      - cmake
       - curl
       - editorconfig
       - entr
@@ -22,9 +22,9 @@
       - libssl-dev
       - llvm
       - lm-sensors
-      - make
-      - neofetch
-      - postgresql-client
+#      - make
+#      - neofetch
+#      - postgresql-client
 #      - rustc
 #      - tldr
       - tmux

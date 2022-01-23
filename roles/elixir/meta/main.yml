@@ -1,9 +1,0 @@
----
-dependencies:
-  - role: asdf
-    vars:
-      lang: erlang
-
-  - role: asdf
-    vars:
-      lang: elixir
