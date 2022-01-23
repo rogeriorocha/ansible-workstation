@@ -1,0 +1,28 @@
+- name: Install asdf jq plugin OK*************
+  command: "asdf plugin-add jq"
+  args:
+    creates: "~/.asdf/plugins/jq"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"
+
+
+- name: Install asdf jq current *************
+  command: "asdf install jq latest"
+  #args:
+  #  creates: "~/.asdf/plugins/jq"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"    
+
+- name: set asdf jq global to latest *************
+  command: "asdf global jq latest"
+  #args:
+  #  creates: "~/.asdf/plugins/jq"
+  environment:
+    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"        
+
+# - name: Test plugins *************
+#   asdf_plugins:
+# #      - name: erlang1
+# #      - name: elixir
+#     - name: nodejs
+#       versions: ["8.11.3"]    

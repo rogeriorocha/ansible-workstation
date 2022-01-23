@@ -1,7 +1,0 @@
----
-- name: Install asdf jq plugin
-  command: "asdf plugin-add jq"
-  args:
-    creates: "~/.asdf/plugins/jq"
-  environment:
-    PATH: "{{ ansible_env.PATH }}:{{ lookup('env', 'HOME') }}/.asdf/bin"

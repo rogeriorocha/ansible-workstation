@@ -7,6 +7,8 @@
     #- role: keyboard
     - role: asdf
     - role: jq
+    - role: golang
+    - role: ruby    
 
     # - role: asdf
     #   vars:
