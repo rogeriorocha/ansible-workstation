@@ -6,6 +6,9 @@ sudo apt update
 sudo apt install ansible git -y
 git clone https://github.com/rogeriorocha/ansible-workstation.git
 
+# create ssh add github
+ssh-keygen -o
+
 cd ansible-workstation
 ansible-playbook install.yml
 ```
