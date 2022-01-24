@@ -6,8 +6,8 @@
     - role: base
     #- role: keyboard
     - role: asdf
-    - role: golang
-    - role: ruby    
+#    - role: golang
+#    - role: ruby    
     - role: ohmyzsh
     - role: other
 
