@@ -1,3 +1,13 @@
+
+
+ 
+```bash
+sudo apt update
+sudo apt install ansible git -y
+git clone https://github.com/rogeriorocha/ansible-workstation.git
+
+```
+
 Ansible playbook/roles for setup of workstation
 
 # Install Ansible and other dependencies
